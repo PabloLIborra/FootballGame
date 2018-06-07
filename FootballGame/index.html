@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="functions.js"></script>
+	<title>Juego de fútbol</title>
+</head>
+<body onchange="comenzar();" onload="recargar();">
+	<section>
+		<div id = "div-inicio">
+			<h1> Juego de Futbol </h1>
+			<p>Elija los nombres de los equipos: </p>
+			<p>
+				Equipo Local: 
+				<input type="text">
+			</p>
+			<p>
+				Equipo Visitante: 
+				<input type="text">
+			</p>
+			<button onclick="alJuego();" disabled>Comenzar</button>
+		</div>
+	</section>
+</body>
+</html>

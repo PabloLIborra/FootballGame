@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <script src="functions.js"></script>
+	<link rel="stylesheet" href="css/game.css">
+	<title>Juego</title>
+</head>
+<body onload="cargar();comprobarEquipos();dibujarCuadricula();dibujarNombres();redibujarFichas();" >
+	<section >
+        <h1>Play chapas</h1>
+        <p>0 - 0</p>
+        <br>
+        <p>
+        <button onclick="comenzarJuego();" disabled>Comenzar</button>
+        <button onclick="borrar();">Abortar</button>
+        </p>
+        <p>
+        <span>X</span>
+        <button onclick="random(this);">Lanzar dado</button>
+        </p>
+		<canvas onclick="getCursorPositionOnCanvas(this, event);" width="720" height="324" onmouseover="seEmpieza();" onmousemove="mouse_move(event);" onmousedown="mouse_down(event);" onmouseup="mouse_up(event);"></canvas>
+    </section>
+    <section >
+        <h2>Equipos</h2>
+        <div>
+        <button onclick="aleatorioL();">Random</button>
+		<img onclick="seleccionar(this);" id="0" src="resources/fichaRoja.svg" alt="">
+		<img onclick="seleccionar(this);" id="1" src="resources/fichaRoja.svg" alt="">
+		<img onclick="seleccionar(this);" id="2" src="resources/fichaRoja.svg" alt="">
+		<img onclick="seleccionar(this);" id="3" src="resources/fichaRoja.svg" alt="">
+		<img onclick="seleccionar(this);" id="4" src="resources/fichaRoja.svg" alt="">
+
+		<img onclick="seleccionar(this);" id="5" src="resources/fichaAmarilla.svg" alt="">
+		<img onclick="seleccionar(this);" id="6" src="resources/fichaAmarilla.svg" alt="">
+		<img onclick="seleccionar(this);" id="7" src="resources/fichaAmarilla.svg" alt="">
+		<img onclick="seleccionar(this);" id="8" src="resources/fichaAmarilla.svg" alt="">
+		<img onclick="seleccionar(this);" id="9" src="resources/fichaAmarilla.svg" alt="">
+		<button onclick="aleatorioV();">Random</button>
+		</div>
+
+    </section>
+
+</body>
+</html>

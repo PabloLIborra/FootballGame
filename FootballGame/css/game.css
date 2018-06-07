@@ -1,0 +1,114 @@
+
+section:nth-of-type(2)>h2{
+    position: relative;
+    bottom:10px;
+}
+
+section:nth-of-type(1)>h1{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+section{
+	text-align: center;
+}
+
+body{
+	background-color: lightgreen;
+}
+
+section:nth-of-type(1)>p:first-of-type{
+	font-size: 2.5em;
+    position: relative;
+    margin-top:-50px;
+    display: none;
+}
+
+section:nth-of-type(1)>p:nth-of-type(3){
+	font-size: 1.5em;
+    position: relative;
+    margin-top:-15px;
+    display: none;
+}
+
+section:nth-of-type(1)>canvas{
+    position: relative;
+}
+
+section:nth-of-type(2)>div{
+    position: relative;
+    bottom:15px;
+}
+
+section:nth-of-type(1)>p:nth-of-type(2){
+    position: relative;
+    margin-top:-30px;
+}
+
+.capa-fondo{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height:40em;
+}
+
+.capa-frente{
+    position: fixed;
+    border: solid 0.3em #333;
+    border-radius: 0.6em;
+    width: 20em;
+    height: 7em;
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: red;
+}
+
+.capa-frente>a{
+	position: relative;
+    border: solid 0.2em #333;
+    border-radius: 0.5em;
+    padding: 2px; 
+    top:8px;
+	color: black;
+	background-color: white;
+	font-family: 'lemonade', cursive;
+	font-size: 20px;
+}
+
+.capa-frente>a:hover{
+	font-weight: bold;
+}
+
+.capa-frente-gol{
+    position: fixed;
+    border: solid 0.3em #333;
+    border-radius: 0.6em;
+    width: 20em;
+    height: 7em;
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.capa-frente-gol>a{
+	position: relative;
+    border: solid 0.2em #333;
+    border-radius: 0.5em;
+    padding: 2px; 
+    top:8px;
+	color: black;
+	background-color: white;
+	font-family: 'lemonade', cursive;
+	font-size: 20px;
+}
+
+.capa-frente-gol>a:hover{
+	font-weight: bold;
+}
